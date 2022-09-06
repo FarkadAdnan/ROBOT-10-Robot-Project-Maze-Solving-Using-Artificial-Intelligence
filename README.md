@@ -236,5 +236,29 @@ void mazeTurn (char dir)
 - In wall follower algorithm, the robot will keep an eye at the right or left wall and navigate throughout the maze until it finds the target point. This algorithm is proven to be very efficient for mazes that are wall-linked to the target point . This makes it very suitable for mazes where the target point is located at the periphery, a situation where the robot almost appears like trying to escape the maze. 
 - There are two types of wall follower algorithm: left-hand rule and right-hand rule. The two algorithms work the same way except turning priority will be either to the left or to the right depending on the type of rule used .
 
+# Path Optimization
+By choosing the correct navigation rule to follow, the path taken may be shorter but not necessarily the most optimum in terms of moves taken. The path may contain redundant moves. A move is considered redundant when it took the robot back to where it was before.
+![16](https://user-images.githubusercontent.com/35774039/188653246-612b6e64-9f25-40e5-b4a1-0c4dd11e8b6c.PNG)
+
+# CONCLUSION
+A wall follower algorithm with selectable left-hand or righthand navigation rule can provide more flexibility and intelligence for maze navigation. The selection of the navigation rule is done dynamically based the scenario encountered by the vehicle. With the addition of path optimization done through the path shortening algorithm, the combined system can provide practical improvement to autonomous vehicles.
+
+# REFERENCES
+
+- Verner, I.M. and D.J. Ahlgren, Robot contest as a laboratory for experiential engineering education. J. Educ. Resour. Comput., 2004. 4(2): p. 2. 
+- Achmad, B. and M.N. Karsiti. Visual-based fuzzy navigation system for mobile robot: Wall and corridor follower. in Intelligent and Advanced Systems, 2007. ICIAS 2007. International Conference on. 2007. Kuala Lumpur.
+- Vignesh, S., et al., Cave Exploration of Mobile Robots using Soft Computing Algorithms. International Journal of Computer Applications 71(22):14-18, June 2013. Published by Foundation of Computer Science, New York, USA. 
+- Mishra, S. and P. Bande. Maze Solving Algorithms for Micro Mouse. in Signal Image Technology and Internet Based Systems, 2008. SITIS '08. IEEE International Conference on. 2008.
+- Cai, J., et al., An Algorithm of Micromouse Maze Solving, in Proceedings of the 2010 10th IEEE International Conference on Computer and Information Technology. 2010, IEEE Computer Society. p. 1995- 2000.
+- Jianping, C., et al. A micromouse maze sovling simulator. in Future Computer and Communication (ICFCC), 2010 2nd International Conference on. 2010.
+- Adil, M.J.S. A Comprehensive and Comparative Study of Maze-Solving Techniques by Implementing Graph Theory. 2010.
+- Sharma, M. and K. Robeonics. Algorithms for Micromouse. in Future Computer and Communication, 2009. ICFCC 2009. International Conference on. 2009. 
+- Elshamarka, I. and A.B.S. Saman, Article: Design and Implementation of a Robot for Maze-Solving using Flood-Fill Algorithm. International Journal of Computer Applications, 2012. 56(5): p. 6. 
+- Cai, Z., L. Ye, and A. Yang. FloodFill Maze Solving with Expected Toll of Penetrating Unknown Walls. in 2012 IEEE 14th International Conference on High Performance Computing and Communications. 2012.
+- Willardson, D.M., Analysis of Micromouse Maze Solving Algorithm, in Learning from Data. 2001, Portland State University.
+- Babula, M. Simulated maze solving algorithms through unknown mazes. in Proceedings of XVIIIth Concurrency, Specification and Programming (CS&P) Workshop. 2009.
+
+
+
 
 
